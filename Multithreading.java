@@ -14,7 +14,7 @@ class NumberPrinter extends Thread {
 
             // Adding a random delay to simulate real-time behavior
             try {
-                Thread.sleep(1000); // Random sleep between 0-99 ms
+                Thread.sleep(random.nextInt(1000)); // Random sleep between 0-99 ms
             } catch (InterruptedException e) {
                 return;  // stop timer
             }
